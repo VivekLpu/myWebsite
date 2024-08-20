@@ -1,32 +1,36 @@
 <?php
-// // This is my first PHP script.
-// echo "Hello World! <br>";
+/*
+// This is my first PHP script.
+echo "Hello World! <br>";
 
-// // Declaring variables
-// $x = 10;
-// $y = 2;
-// $sum = $x + $y; 
-// $diff = $x - $y; 
-// $mul = $x * $y; 
-// $div = $x / $y; 
-// $mod = $x % $y; 
-// $pow = $x ** $y; 
+// Declaring variables
+$x = 10;
+$y = 2;
+$sum = $x + $y; 
+$diff = $x - $y; 
+$mul = $x * $y; 
+$div = $x / $y; 
+$mod = $x % $y; 
+$pow = $x ** $y; 
 
-// //displaying variables
-// echo "<br>Sum: " . $sum; 
-// echo "<br>Difference: " . $diff;
-// echo "<br>Product: " . $mul;
-// echo "<br>Remainder: ". $mod;
-// echo "<br>Division: " . $div;
-// echo "<br>Power: " . $pow;
-// echo "<br>";
+//displaying variables
+echo "<br>Sum: " . $sum; 
+echo "<br>Difference: " . $diff;
+echo "<br>Product: " . $mul;
+echo "<br>Remainder: ". $mod;
+echo "<br>Division: " . $div;
+echo "<br>Power: " . $pow;
+echo "<br>";
 
-// //display datatype of variables
-// var_dump($sum) ;
+//display datatype of variables
+var_dump($sum) ;
 
+*/
+
+
+/*
 //write a script to check the variable is integer or not
 //also check it is positive,negative or zero
-
 $a = 50;
 $b = 3.14;
 
@@ -99,7 +103,11 @@ $p = 89.94584;
 echo "Before TypeCasting: ".$p. "<br>";
 $int_p = (int) $p;
 echo "After TypeCasting: ".$int_p. "<br>";
+*/
 
+
+/*
+//String
 $name = "Gulzaar is a good boy ";
 $title = " Shayar";
 echo "Length of String: ". strlen($name). "<br>";
@@ -112,4 +120,30 @@ echo "<pre>";
 echo "rtrim: ". rtrim("       this is a good boy      "). "<br>";
 echo "ltrim: ". ltrim("       this is a good boy      "). "<br>";
 echo "</pre>";
+*/
+
+
+
+/*
+//Arrays in php
+
+$cars = array ("Volvo", "BMW", "Toyota");
+var_dump($cars);
+echo "<br>";
+
+for( $i=0; $i<sizeof($cars); $i++){
+    echo "$cars[$i]"."<br>";
+}
+
+$nums = [45,35,34,65,46,36,90,87,65,85,84,60];
+echo "My array: ";
+for($i=0; $i<sizeof($nums);$i++){
+    echo "$nums[$i]"." ";
+}
+echo "<br>Maximum of array: ".max($nums). "<br>";
+echo "Minimum of array: ".min($nums). "<br>";
+*/
+
+
+
 ?>
