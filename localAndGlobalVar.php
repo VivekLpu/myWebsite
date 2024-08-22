@@ -11,9 +11,18 @@ function add(){
 
 //Call the function and print the result
 $result = add();
-echo $result;
+echo $result."<br>";
 
+//Use of Static Keyword
+function myTest(){
+    static $x = 0;
+    echo $x."<br>";
+    $x++;
+}
 
+myTest();
+myTest();
+myTest();
 
 
 ?>
