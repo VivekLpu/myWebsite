@@ -24,6 +24,15 @@ myTest();
 myTest();
 myTest();
 
+//TypeCasting in php
+$x = 23454.5453434;
+$int_cast = (int) $x;
+echo $int_cast;
+echo "<br>";
 
+//Cast String to int
+$x = "23454334.2343";
+$int_cast = (int) $x;
+echo $int_cast;
 ?>
 
