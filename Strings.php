@@ -41,4 +41,7 @@ function findMaxMin($array){
 }
 
 findMaxMin([45,34,65,78,54,12,75,87,89,54]);
+
+$a = null;
+var_dump($a);
 ?>
