@@ -72,6 +72,19 @@ foreach($courses as $course){
 
 //to remove an element an existing item from array => array_splice() function
 $cars = array("Volvo","BMW","Toyota");
-array_splice($cars,1,1);
+array_splice($cars,1,1);;
 var_dump($cars);
+echo "<br>";
+
+$products = array("Laptop" => 1200, "Tablet" => 600, "Smartphone" => 900, "Desktop" => 1500);
+//sorting this array in ascending order by Value
+asort($products); //it will sort by value in ascending order
+arsort($products); //it will sort by value in descending order
+ksort($products); //it will sort by keys in ascending order
+krsort($products); //it will sort by keys in descending order
+foreach ($products as $product => $price) {
+    echo "$product: $price\n";
+}
+
+
 ?>
