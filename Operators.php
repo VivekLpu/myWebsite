@@ -45,5 +45,44 @@ echo "Result of complex expression  : $result4 <br>";
 $checkEvenOdd = $x % 2 == 0 ? "Number: $x is even <br>" : "Number: $x is odd <br>";
 echo "$checkEvenOdd";
 
+//Null coalescing
+echo $status = $user ?? 'anonymous';
+echo "<br>";
+
+$user = "Michael";
+echo $status = $user ?? 'anonymous';
+echo "<br>"; 
+
+//write a php script to print first  non-null variable using null coalesing operator
+$a =null; $b = null; $c= 56; $d= null;
+$result5 = $a ?? $b ?? $c ?? $d;
+echo "First non-null character: $result5 <br>";
+
+//Ternary Operator with nested condition
+$result6 = $a ?($b ? "Both true" : "A is true, B is false") : ($c > 5 ? "A is false, c < 5" : "A is false, c >= 5");
+echo "Result of nested ternary operator: $result6 <br>";
+
+//Logical Operator
+//write a php script take year as an input & check whether it is leap year or not
+
+function checkLeapYear($year){
+    if($year / 400){
+        if($year / 100){
+            if($year / 4){
+                return true;
+            }else{
+                return false;
+            }
+        }else{
+            return true;
+        }
+    }
+}
+$year = 2025;
+if($year){
+    echo "$year is a leap year. <br>";
+}else{
+    echo "$year is not a leap year. <br>";
+}
 
 ?>
