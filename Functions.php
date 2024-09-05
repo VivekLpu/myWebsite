@@ -35,5 +35,14 @@ echo "Multiplication of 3,4: ". multiply(3,4)."<br>";
 echo "Multiplication of 3,4,5: ". multiply(3,4,5)."<br>";
 echo "Multiplication of 2,3,4,5: ". multiply(2,3,4,5)."<br>";
 
+//callback function
+function my_callback($item){
+    return strlen($item);
+}
+
+$strings = ["apple","orange","banana","coconut"];
+$lengths = array_map("my_callback",$strings);
+print_r($lengths)       
+
 
 ?>
