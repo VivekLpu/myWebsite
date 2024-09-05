@@ -82,9 +82,37 @@ asort($products); //it will sort by value in ascending order
 arsort($products); //it will sort by value in descending order
 ksort($products); //it will sort by keys in ascending order
 krsort($products); //it will sort by keys in descending order
+
 foreach ($products as $product => $price) {
     echo "$product: $price\n";
 }
+echo "<br>";
+
+//array_chunk() function splits an array in chunks
+//array_count_values() function counts all the values of an array
+
+$a = array("Block 33","Block 34","Block 34","Block 36","Block 36");
+$count = array_count_values($a);
+print_r($count);
+echo "<br>";
+//Combine the array and print the common elements from the both array
+$array1 = [1,3,5,7,9];
+$array2 = [2,7,11,15];
+$mergedArray = array_merge($array1,$array2);
+print_r($mergedArray);
+echo "<br>";
+
+//return the common elements in both
+$intersect = array_intersect($array1,$array2);
+print_r($intersect);
+echo "<br>";
+
+//difference
+$difference = array_diff($array1,$array2);  //remove all those elements from array1 which is also present in array2;
+print_r($difference);
+
+//array search
+$colors = array("a" => "red", )
 
 
 ?>
