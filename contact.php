@@ -23,7 +23,6 @@
         if (isset($_GET['page'])) {
             $page = $_GET['page'];
 
-            // Assuming you have 'foot.php', 'head.php', and 'header.php' files
             $file = $page . ".php";
 
             if (file_exists($file)) {
